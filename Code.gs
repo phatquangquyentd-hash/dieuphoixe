@@ -240,3 +240,10 @@ function jsonResponse(obj) {
   return ContentService.createTextOutput(JSON.stringify(obj))
     .setMimeType(ContentService.MimeType.JSON);
 }
+function LUU_KEY_VAO_BO_NHO_NGAM() {
+  // Thay mã AIzaSy... của bạn vào giữa 2 dấu nháy kép dưới đây rồi bấm Run:
+  const myKey = "AIzaSy_DAN_MA_CUA_BAN_VAO_DAY"; 
+  
+  PropertiesService.getScriptProperties().setProperty("GEMINI_API_KEY", myKey.trim());
+  Logger.log("Đã lưu GEMINI_API_KEY thành công vào bộ nhớ bảo mật của Google Apps Script!");
+}
